@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rule-Based Chatbot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="bg-white w-full max-w-md p-6 rounded-xl shadow-lg flex flex-col">
+    <h1 class="text-2xl font-bold text-center mb-4">Simple Chatbot</h1>
+    <div id="chatbox" class="flex-1 overflow-y-auto mb-4 space-y-2 p-2 border rounded h-80 bg-gray-50"></div>
+    <form id="chat-form" class="flex gap-2">
+      <input type="text" id="user-input" placeholder="Type a message..." class="flex-1 border rounded px-4 py-2 focus:outline-none"/>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
